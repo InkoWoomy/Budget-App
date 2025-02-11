@@ -66,6 +66,13 @@ function budgetRefresh()
     console.log(expenseTypes);
     console.log(expensePrice);
 
+    for (let i = 0; i < expensePrice.length; i++)
+    {
+        expenseTotal += JSON.parse(expensePrice[i]);
+        console.log(expenseTotal)
+    }
+
+
     menuStart.style = "display: block";
     menuUpdateBudget.style = "display: none";
     menuAddExpense.style = "display: none";
@@ -129,6 +136,7 @@ btnManageExpenses.addEventListener('click', async() => {
     }
     console.log(expenseTypes);
     console.log(expensePrice);
+
 
     expensePrice.map(index => {
         console.log(`MAPPING`, index)
