@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-emerald-200">
+    
+    <section id="menuStart">
+        <h1 class="text-center" id="textBudget" style="font-size: 96px;">BUDGET</h1>
+        <div class="grid grid-cols-3" style="font-size: 48px;">
+            <button type="button" id="btnUpdateBudget" class="col-start-2 text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full px-5 py-2.5 text-center mb-2">UPDATE BUDGET</button>
+            <button type="button" id="btnManageExpenses" class="col-start-2 text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full px-5 py-2.5 text-center mb-2">MANAGE EXPENSES</button>
+            <button type="button" id="btnAddExpense" class="col-start-2 text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full px-5 py-2.5 text-center mb-2">ADD EXPENSE</button>
+        </div>
+    </section>
+
+    <section id="menuUpdateBudget">
+        <h1 class="text-center" id="textBudget" style="font-size: 48px;">Set Your Budget Amount</h1>
+        <div class="grid grid-cols-3">
+            <div class="col-start-2">
+                <input type="number" id="inputUpdateBudget" class="bg-gray-50 border   border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required />
+                <button type="button" id="btnConfirmUpdate" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full px-5 py-2.5 text-center mb-2">Confirm</button>
+                
+            </div> 
+        </div>
+    </div>
+    </section>
+
+    <section id="menuManageExpenses">
+        <h1 class="text-center" id="textBudget" style="font-size: 48px;">Manage your Expenses</h1>
+
+        <div id="expensesDataList">
+            <div></div>
+        </div>
+
+        <button type="button" id="btnConfirmManage" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full px-5 py-2.5 text-center mb-2">Back To Menu</button>
+    </section>
+
+    <section id="menuAddExpense">
+        <h1 class="text-center" id="textBudget" style="font-size: 48px;">Add your Expense</h1>
+        <div class="grid grid-cols-3">
+            <div class="col-start-2">
+                <input type="text" id="expenseName" class="bg-gray-50 border   border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required />
+                <input type="number" id="expenseAmount" class="bg-gray-50 border   border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required />
+                <button type="button" id="btnConfirmAddExpense" class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full px-5 py-2.5 text-center mb-2">Confirm</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+</html>
